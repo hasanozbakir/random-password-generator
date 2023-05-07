@@ -55,6 +55,10 @@ function generatePassword() {
 function resetPassword() {
     passwordOneEl.textContent = "";
     passwordTwoEl.textContent = "";
+    numberCheckbox.checked = false;
+    symbolCheckbox.checked = false;
+    slider.value = 15;
+    output.textContent = slider.value;
 }
 
 function copyPassword(element) {
